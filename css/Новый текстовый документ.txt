@@ -1,5 +1,5 @@
-/* Р“РѕР»РѕРІРЅР° СЃС‚РѕСЂС–РЅРєР° РЎС‚СѓРґС–СЏ */
-/* С€Р°РїРєР° СЃР°Р№С‚Сѓ */ 
+/* Головна сторінка Студія */
+/* шапка сайту */ 
 :root { 
   --color-background-top-line: #FFFFFF; 
   --color-background-hero: #C4C4C4;
@@ -28,7 +28,7 @@
   --color-photo-h2-border:#EEEEEE;
   --color-primary-icon:  #AFB1B8 ;   
   --color-accent-primary-icon:  #2196f3 ;
-  /* РїРѕСЂС‚С„РѕР»С–Рѕ */
+  /* портфоліо */
   --color-background-filter-but : #F5F4FA;
   --color-accent-background-filter-but: #2196F3  ;
   --color-text-filter-but : #212121;
@@ -55,9 +55,7 @@ img {
  
 
  .header-container { display: flex; 
-  align-items: center;
-
-}
+  align-items: center; }
  .logo {
    display: flex;  
   margin-right: 93px;
@@ -67,18 +65,17 @@ img {
 
  }
 
- .header-nav {
-  display: flex;  
+ .header-nav {display: flex;  
   margin-right: auto;  
   align-items: center;
 }
 
 .site-navigation { 
   display: flex;
-   gap: 52px;
-  
-   
-  }
+   gap: 52px; }
+
+
+
 
  .container { 
   width: 1200px;
@@ -91,7 +88,7 @@ img {
   /* outline: 2px solid red;
   outline-offset: -2px; */
   }
-  /* flex-wrap: wrap; РґРѕР·РІРѕР»СЏС” РµР»РµРјРµРЅС‚Р°Рј РїРµСЂРµРЅРѕСЃРёС‚РёСЃСЏ РЅР° С–РЅС€РёР№ СЂСЏРґРѕРє */
+  /* flex-wrap: wrap; дозволяє елементам переноситися на інший рядок */
   
 body { 
     color: var(--color-text-paragraph);
@@ -112,9 +109,9 @@ letter-spacing: 0.03em;
 
 
  .logo-web { color: var(--color-logo-web-top) ; }
-/* СЃРєРёРґР°РЅРЅСЏ РІСЃС–С… РєСЂР°РїРѕРє РІ РЅРµРЅСѓРјРµСЂРѕРІР°РЅРёС… СЃРїРёСЃРєР°С… РЅРµ РіР»РѕР±Р°Р»СЊРЅРѕ */
+/* скидання всіх крапок в ненумерованих списках не глобально */
  .list { list-style: none; }
- /* СЃРєРёРґР°РЅРЅСЏ РіР»РѕР±Р°Р»СЊРЅРѕ РґР»СЏ СЃСЃРёР»РѕРє РЅРёР¶РЅС” РїС–РґРєСЂРµСЃР»РµРЅРЅСЏ */
+ /* скидання глобально для ссилок нижнє підкреслення */
  a { text-decoration: none; }
 
 
@@ -130,41 +127,42 @@ letter-spacing: 0.03em;
       padding-bottom: 32px;
       display: block;
 
-       }
-      
-.site-navigation .linky {   
-  color:var(--color-primary-contact-Information-top); 
 
+
+       }
+       /*  */
+.site-navigation .linky {   
+  color:var(--color-primary-contact-Information-top);  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em; 
-    display: flex;
-    align-items: center;
-
 
   }  
+
+
+
+
 
  .linky:hover .linky-icon,
  .linky:focus .linky-icon 
 {
   fill: var(--color-accent-menu-nav) ;
- 
  }
 
  .linky-icon {
   fill:var(--color-primary-contact-Information-top) ;
-  padding-right: 10px;
-
  }
-  /* РїСЂРё РЅР°РІРµРґРµРЅРЅС– Р°Р±Рѕ С„РѕРєСѓСЃСѓРІР°РЅРЅС–  РЅР° СЃСЃРёР»РєСѓ РјС–РЅСЏС” РєРѕР»С–СЂ РЅР° #2196F3 */
+
+
+  /* при наведенні або фокусуванні  на ссилку міняє колір на #2196F3 */
   .site-navigation, .link:hover,
   .site-navigation, .link:focus {color: var(--color-accent-menu-nav) }
-  /* СЃС‚Р°РІРёРјРѕ РєР»Р°СЃ current РІ С‚Сѓ СЃСЃРёР»РєСѓ РЅР° РїРѕС‚РѕС‡РЅСѓ СЃС‚РѕСЂС–РЅРєСѓ РІ СЏРєС–Р№ Р·Р°СЂР°Р· Р·РЅР°С…РѕРґРёРјРѕСЃСЏ С‰РѕР± РїС–РґСЃРІС–С‚РёС‚Рё СЃСЃРёР»РєСѓ РґР»СЏ С–РЅС„РѕСЂРјР°С†С–С— С‰Рѕ С†СЏ СЃС‚РѕСЂС–РЅРєР° Р·Р°СЂР°Р· РІС–РґРєСЂРёС‚Р° РІ Р±СЂР°СѓР·РµСЂС– */
+  /* ставимо клас current в ту ссилку на поточну сторінку в якій зараз знаходимося щоб підсвітити ссилку для інформації що ця сторінка зараз відкрита в браузері */
   .site-navigation .link.current { color:var(--color-accent-menu-nav)  ;}
 
 
-  /* Р С–С€РµРЅРЅСЏ РґР»СЏ Р±С–Р·РЅРµСЃСѓ hero     РїС–Рґ С€Р°РїРєРѕСЋ РїРµСЂС€Р° СЃРµРєС†С–СЏ */ 
+  /* Рішення для бізнесу hero     під шапкою перша секція */ 
 
   .hero { 
     max-width: 1600px;
@@ -224,12 +222,12 @@ margin-right: auto;
   color:   var(--color-accent-text-button);
   background-color: var(--color-accent-background-button);}
 
-  /* С…РѕРІР°СЋ Р·Р°РіРѕР»РѕРІРѕРє (РЅР°С€С– РѕСЃРѕР±Р»РёРІРѕСЃС‚С–) */
+  /* ховаю заголовок (наші особливості) */
   .feature-list-h2 {font-size: 0px; 
      }
 
      .pravylo { flex-basis: calc((100%-30px-30px-30px)/4); }
-  /* РєРѕР»С–СЂ Р·Р°РіРѕР»РѕРІРєС–РІ.. Р° РєРѕР»С–СЂ С‚РµРєСЃС‚Сѓ РІРёР·РЅР°С‡Р°С”С‚СЊСЃСЏ СЏРє РѕСЃРЅРѕРІРЅРёР№ РЅР° СЃС‚РѕСЂС–РЅС†С– */
+  /* колір заголовків.. а колір тексту визначається як основний на сторінці */
   .list.title h3 {color:var(--color-text-title) ;
     font-style: normal;
     font-weight: 700;
@@ -250,9 +248,7 @@ margin-right: auto;
       align-items: center;
       justify-content: center;
      
-      /* padding: 25px 100px ; */
-     padding-top: 25px ;
-     padding-bottom: 25px ;
+      padding: 25px 100px ;
       margin-bottom: 30px;
           background-color: var(--color-background-our-team) ;
           border-radius: 4%;
@@ -272,11 +268,8 @@ margin-right: auto;
 
     .photo-robota { padding-top: 0; }
  
-    
-
-    .photo-robota h2  { 
-    
-    color: var(--color-text-title);  
+  .photo-robota, .regular h2  { color: var(--color-text-title);
+  
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -290,7 +283,9 @@ margin-right: auto;
   }
 
   
-/* РЅР°С€Р° РєРѕРјР°РЅРґР° С„РѕС‚РѕРіСЂР°С„С–С— РїСЂР°С†С–РІРЅРёРєС–РІ */
+
+ 
+/* наша команда фотографії працівників */
 
   .our-team {background-color:var(--color-background-our-team); }
   .our-team h2 { color: var(--color-text-title);
@@ -301,20 +296,17 @@ margin-right: auto;
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: auto;
-    /* margin-bottom: auto; */
+    margin-bottom: auto;
     margin-bottom: 50px;
 
   }   
-  .our-team .list h3 { 
-    
-    color:var(--color-text-title);    
+  .our-team .list h3 { color:var(--color-text-title); 
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 10px;
      
    } 
     
@@ -325,37 +317,26 @@ margin-right: auto;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em; 
+
 } 
 
-.our-h3  { 
-  padding-top: 30px;  
-
-  }
-
-
-
+.our-h3  { padding-top: 30px;
+margin-bottom: 10px; }
+.our-p { padding-bottom: 30px;  }
   .container-our-team {
      display: flex; 
    gap: 30px;
   justify-content: center;
-
-
   }
-
-  .container-our-team li { background-color: var(--background-color-our-team-li) ;
-  
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-  
-  }
+  .container-our-team li { background-color: var(--background-color-our-team-li) ; }
   
   
   .socials { 
-    display: flex;    
+    display: flex;
     gap: 10px;
 justify-content: center;
-padding-top: 16px;
-padding-bottom: 30px;
+margin-top: 16px;
+margin-bottom: 30px;
    }
 
    .socials-link { 
@@ -398,66 +379,27 @@ justify-content: center;
         
     }
 
-
-
-    .regular h2  { 
-    
-      color: var(--color-text-title);
    
-      font-style: normal;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.16;
-      text-align: center;
-      letter-spacing: 0.03em; 
-      margin-top: auto;
-      
-      margin-bottom: 50px;
-      
-    }
-
-  
-    
-  .regular-customers { 
-    display: flex;
-   
-    flex-basis: calc((100%-150px)/6);
-
-    }
-
-    .customers-icon {
-      
-      width: 106px;
-      height:60px; 
-      padding: 16px 32px; 
-    
-    
-    }
-
-
  .customers { 
     display: flex;
-    /* gap: 30px; */
-    
+    gap: 30px;
+justify-content: center;
+
    }
 
    .customers-link { 
 display: flex;
 align-items: center;
 justify-content: center;
-    /* width: 170px; */
-    /* height:92px; */
-    /* padding: 16px 32px; */
+    width: 170px;
+    height:92px;
 
     border-radius: 4%;
     border: 1px solid var(--color-primary-icon) ;
-
-
-    
     } 
 
     .customers-link { 
-      /* display: block; */
+      display: block;
       fill: var(--color-primary-icon);
      } 
      
@@ -467,16 +409,15 @@ justify-content: center;
        display: flex;
  align-items: center;
  justify-content: center;
- /* width: 170px; */
- /* flex-basis: calc((100%-1050px)/6); */
- /* height:92px;      */
+ width: 170px;
+ height:92px;     
      fill: var(--color-accent-primary-icon) ;  
      border: 1px solid var(--color-accent-primary-icon);
        
      }
 
 
-  /* РїС–РґРІР°Р» С„СѓС‚РµСЂ */
+  /* підвал футер */
   .logofut-stud { color:var(--color-logo-studio-footer) ; 
     font-family: 'Raleway';
     font-style: normal;
@@ -490,36 +431,18 @@ justify-content: center;
 
   .logo-wais-web { color:var(--color-logo-web-footer); }
 
-
-
   .basement { 
     background-color:var(--color-background-footer-basement);
    padding-top: 60px;
   padding-bottom: 60px; 
+
   display: flex;
-  gap: 70px;
+  gap: 10px;
   
-
-
   justify-content: left;
 
-
-  /* flex-basis: calc((100%-1050px)/6); */
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.basement-logo { width: 400px; }
   
 .adresa, .adre { 
   font-style: normal;
@@ -634,13 +557,17 @@ justify-content: center;
 
 
 
-/* РџРѕСЂС‚С„РѕР»С–Рѕ  СЃС‚РёР»С– РґР»СЏ РґСЂСѓРіРѕС— СЃС‚РѕСЂС–РЅРєРё Р· С–РјСЏРј РџРѕСЂС‚С„РѕР»С–Рѕ */
+
+
+
+
+/* Портфоліо  стилі для другої сторінки з імям Портфоліо */
 
 
 
 
 .filters h1 {font-size: 0px;}
-/* РєРЅРѕРїРєРё    РЅР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ РєРЅРѕРїРѕРє (С„С–Р»СЊС‚СЂРё) */
+/* кнопки    налаштування кнопок (фільтри) */
 .filter-but { 
   color:var(--color-text-filter-but ) ;
   background-color: var(--color-background-filter-but) ;   
@@ -671,17 +598,11 @@ justify-content: center;
    .filter-but:hover,
    .filter-but:focus {  
     color: var( --color-accent-text-filter-but) ;
-    background-color: var(--color-accent-background-filter-but);
-    
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-
-
-
+    background-color: var(--color-accent-background-filter-but) ;
   }
 
-    /* СЃРµРєС†С–СЏ С–Р· С„РѕС‚РѕРіСЂР°С„С–СЏРјРё */
-/* С…РѕРІР°СЋ Р·Р°РіРѕР»РѕРІРѕРє h1 */
+    /* секція із фотографіями */
+/* ховаю заголовок h1 */
 
 
 .projects h1 {font-size: 0px; }
@@ -732,10 +653,9 @@ justify-content: center;
 
 
   .box:hover,
-  .box:focus { 
-     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-    
-    }
+  .box:focus {  
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); }
+
 
 
 

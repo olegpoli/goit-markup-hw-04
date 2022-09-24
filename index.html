@@ -28,8 +28,9 @@
 </nav>
 <!--контактна інформація  -->
 <ul class="site-navigation list ">
-    <li > 
-           <a href="mailto:info@devstudio.com"  class="link linky" > <svg class="linky-icon" width="16px" height="12px" >
+    <li  > 
+           <a href="mailto:info@devstudio.com"  class="link linky" > 
+            <svg class="linky-icon" width="16px" height="12px" >
             <use href="./images/icons.svg#icon-mail" ></use>
            </svg> 
                info@devstudio.com
@@ -59,19 +60,34 @@
             <h2 class="feature-list-h2" >Наші особливості</h2>
             <ul class="list title container-feature-list">
                 <li class="pravylo" >
-                    <svg class="pravylo-icon" width="70px" height="70px" >
-                    <use href="./images/icons.svg#icon-antenna"></use>
-                   </svg>
+                    <div class="pravylo-icon">
+                        <svg  width="70px" height="70px" >
+                        <use href="./images/icons.svg#icon-antenna"></use>
+                       </svg>
+                    </div>
                     <h3> УВАГА ДО ДЕТАЛЕЙ </h3> <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p> </li>
-                <li class="pravylo" >  <svg class="pravylo-icon" width="70px" height="70px" >
-                    <use href="./images/icons.svg#icon-clock"></use>
-                   </svg> <h3>ПУНКТУАЛЬНІСТЬ</h3> <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>  </li>
-                <li class="pravylo" >  <svg class="pravylo-icon" width="70px" height="70px" >
-                    <use href="./images/icons.svg#icon-diagram"></use>
-                   </svg> <h3>ПЛАНУВАННЯ</h3> <p>Так само консультація з широким активом значною мірою зумовлює. </p>  </li>
-                <li class="pravylo" >  <svg class="pravylo-icon" width="70px" height="70px" >
-                    <use href="./images/icons.svg#icon-astronaut"></use>
-                   </svg> <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3> <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань. </p>  </li>
+                <li class="pravylo" > 
+
+                    <div class="pravylo-icon" >
+                        <svg width="70px" height="70px" >
+                        <use href="./images/icons.svg#icon-clock"></use>
+                       </svg>
+                    </div>
+                   
+                   <h3>ПУНКТУАЛЬНІСТЬ</h3> <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>  </li>
+                <li class="pravylo" > 
+                     <div class="pravylo-icon" >
+                        <svg width="70px" height="70px" >
+                        <use href="./images/icons.svg#icon-diagram"></use>
+                       </svg> </div>
+                   <h3>ПЛАНУВАННЯ</h3> <p>Так само консультація з широким активом значною мірою зумовлює. </p>  </li>
+                <li class="pravylo" > 
+                   <div class="pravylo-icon"> 
+                    <svg  width="70px" height="70px" >
+                        <use href="./images/icons.svg#icon-astronaut"></use>
+                       </svg>
+                   </div>
+                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3> <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань. </p>  </li>
             </ul> </div>
                    </section>
     <!--чим займаємося-->
@@ -91,7 +107,7 @@
         <div class="container" > 
         <h2>Наша команда</h2>
         <ul class="list container-our-team " > 
-            <li> <img src="./images/team_card_1.jpg" alt="photo_team_card_1" width="270" height="260" > <div class="our-h3" ><h3>Ігор Дем'яненко</h3></div> <div class="our-p" ><p>Product Designer</p>
+            <li> <img src="./images/team_card_1.jpg" alt="photo_team_card_1" width="270" height="260" > <div class="our-h3" ><h3>Ігор Дем'яненко</h3> <p>Product Designer</p>
             <ul class="socials list">
                  <li class="socials-item" > 
                     <a 
@@ -154,7 +170,15 @@
 
             </ul>  
             </div> </li>
-            <li> <img src="./images/team_card_2.jpg" alt="photo_team_card_2" width="270" height="260" > <div class="our-h3" ><h3>Ольга Рєпіна</h3></div> <div class="our-p" ><p>Frontend Developer</p>
+
+
+
+
+
+
+
+
+            <li> <img src="./images/team_card_2.jpg" alt="photo_team_card_2" width="270" height="260" > <div class="our-h3" ><h3>Ольга Рєпіна</h3><p>Frontend Developer</p>
                  <ul class="socials list">
                 <li class="socials-item" > 
                    <a 
@@ -216,7 +240,7 @@
 
 
            </ul></div> </li>
-            <li> <img src="./images/team_card_3.jpg" alt="photo_team_card_3" width="270" height="260" > <div class="our-h3" ><h3>Микола Тарасов</h3></div> <div class="our-p" ><p>Marketing</p> <ul class="socials list">
+            <li> <img src="./images/team_card_3.jpg" alt="photo_team_card_3" width="270" height="260" > <div class="our-h3" ><h3>Микола Тарасов</h3><p>Marketing</p> <ul class="socials list">
                 <li class="socials-item" > 
                    <a 
                    class="socials-link link" 
@@ -277,7 +301,7 @@
 
 
            </ul></div>  </li>
-            <li> <img src="./images/team_card_4.jpg" alt="photo_team_card_4" width="270" height="260" > <div class="our-h3" ><h3>Михайло Єрмаков</h3></div> <div class="our-p" ><p>UI Designer</p> <ul class="socials list">
+            <li> <img src="./images/team_card_4.jpg" alt="photo_team_card_4" width="270" height="260" > <div class="our-h3" ><h3>Михайло Єрмаков</h3><p>UI Designer</p> <ul class="socials list">
                 <li class="socials-item" > 
                    <a 
                    class="socials-link link" 
@@ -355,21 +379,24 @@
                rel="noopener noreferer"
                aria-label="Ya & CO"
                >
-               <svg class="customers-icon"  width="170px" height="92px"  >
+
+               <!-- <svg class="customers-icon"  width="106px" height="60px" > -->
+               <svg class="customers-icon" >
                    <use href="./images/icons.svg#icon-Logo-0" ></use>
                   </svg>
                 </a>
                       
            </li>
+
            <li class="regular-customers" > 
             <a 
             class="customers-link link" 
             href=""                     
             target="_blank"
             rel="noopener noreferer"
-            aria-label="Ya & CO"
+            aria-label="Company tagline here"
             >
-            <svg class="customers-icon"  width="170px" height="92px"  >
+            <svg class="customers-icon"  >
                 <use href="./images/icons.svg#icon-Logo-1" ></use>
                </svg>
              </a>
@@ -381,9 +408,9 @@
             href=""                     
             target="_blank"
             rel="noopener noreferer"
-            aria-label="Ya & CO"
+            aria-label="Company"
             >
-            <svg class="customers-icon"  width="170px" height="92px"  >
+            <svg class="customers-icon"   >
                 <use href="./images/icons.svg#icon-Logo-2" ></use>
                </svg>
              </a>
@@ -395,9 +422,9 @@
             href=""                     
             target="_blank"
             rel="noopener noreferer"
-            aria-label="Ya & CO"
+            aria-label="foster peters"
             >
-            <svg class="customers-icon"  width="170px" height="92px"  >
+            <svg class="customers-icon"   >
                 <use href="./images/icons.svg#icon-Logo-3" ></use>
                </svg>
              </a>
@@ -409,9 +436,9 @@
             href=""                     
             target="_blank"
             rel="noopener noreferer"
-            aria-label="Ya & CO"
+            aria-label="brand"
             >
-            <svg class="customers-icon"  width="170px" height="92px"  >
+            <svg class="customers-icon"  >
                 <use href="./images/icons.svg#icon-Logo-4" ></use>
                </svg>
              </a>
@@ -423,9 +450,9 @@
             href=""                     
             target="_blank"
             rel="noopener noreferer"
-            aria-label="Ya & CO"
+            aria-label="Company tag line"
             >
-            <svg class="customers-icon"  width="170px" height="92px"  >
+            <svg class="customers-icon"   >
                 <use href="./images/icons.svg#icon-Logo-5" ></use>
                </svg>
              </a>
@@ -483,9 +510,27 @@
        </ul> </div>
     </section> 
    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    <!--футер підвал-->
-<footer  class="basement" > 
-    <div class="container basement-logo " > 
+   <footer   > 
+
+    <div class=" container basement"  >
+
+    <div class="basement-logo " > 
     <a href="/" class="logofut-stud" > <span class="logo-wais-web" >Web</span>Studio</a>
     <address> 
     <ul class="list " >
@@ -500,7 +545,7 @@
 
 
 
-    <div class="container join" > 
+    <div class="join" > 
         <h3>ПРИЄДНУЙТЕСЬ</h3>
        
         
@@ -569,6 +614,26 @@
         
           </div> 
 
+
+        </div>
+
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
